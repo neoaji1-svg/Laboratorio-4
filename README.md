@@ -18,11 +18,12 @@ En esta práctica de laboratorio se desarrolló un sistema de **Gestión de Inve
 ### Programa 1: Formulario Principal de Productos (`Form1.cs`)
 * **Descripción de la solución:**
 ![image alt](https://github.com/neoaji1-svg/Laboratorio-4/blob/0fbf1655d275eb01231bbd25d25b99e6fb66984a/img/Funcionamiento.png)
+![image alt](https://github.com/neoaji1-svg/Laboratorio-4/blob/b903abaa4f452dcc2bfe76c9144ba9f99634cc5f/img/Base%20de%20datos.png)
   Implementa la interfaz gráfica interactiva con el usuario. Administra los eventos del `DataGridView` para mostrar la lista actualizada de productos y la carga dinámica de imágenes al hacer clic en el `PictureBox` usando un `OpenFileDialog`. Incluye métodos de conversión binaria (`ImageToByteArray` y `ByteArrayToImage`) para transformar archivos visuales en arreglos de bytes (`byte[]`) requeridos por MySQL. Además, controla los eventos de botones para ejecutar las sentencias SQL parametrizadas (`INSERT`, `UPDATE`, `DELETE`) y el filtrado en tiempo real a través del evento `TextChanged` del buscador.
 
 ### Programa 2: Clase Helper de Conexión y Datos (`Conexion.cs`)
 * **Descripción de la solución:**
-  ![image alt](https://github.com/neoaji1-svg/Laboratorio-4/blob/b903abaa4f452dcc2bfe76c9144ba9f99634cc5f/img/Base%20de%20datos.png)
+  
   Clase encargada de la persistencia y la conexión directa con la base de datos MySQL mediante `MySqlConnection`. Proporciona el método `GetProductos()` que utiliza `MySqlDataReader` para mapear los registros hacia una colección fuertemente tipada (`List`). Implementa algoritmos dinámicos como `InsertSeguro`, `Actualizar` y `Eliminar`, los cuales procesan la información mediante diccionarios clave-valor (`Dictionary`) para construir y ejecutar comandos de forma segura con parámetros SQL.
 
 ## Estructura de Carpetas o Directorios
