@@ -26,6 +26,11 @@ En esta práctica de laboratorio se desarrolló un sistema de **Gestión de Inve
   ![image alt](https://github.com/neoaji1-svg/Laboratorio-4/blob/170a8e139f068177774639bef0ece077de7a2124/img/Clase%20de%20conexion.png)
   Clase encargada de la persistencia y la conexión directa con la base de datos MySQL mediante `MySqlConnection`. Proporciona el método `GetProductos()` que utiliza `MySqlDataReader` para mapear los registros hacia una colección fuertemente tipada (`List`). Implementa algoritmos dinámicos como `InsertSeguro`, `Actualizar` y `Eliminar`, los cuales procesan la información mediante diccionarios clave-valor (`Dictionary`) para construir y ejecutar comandos de forma segura con parámetros SQL.
 
+## Autor
++ Nombre: Neo Aji
++ Institución: Universidad Tecnológica de Panamá (UTP)
++ Fecha de Realización: [24/9/26]
+
 ## Estructura de Carpetas o Directorios
 
 ```plaintext
